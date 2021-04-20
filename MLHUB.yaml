@@ -21,6 +21,9 @@ dependencies :
     - code/preprocessing.py
     - code/nlp_model.py
     - model/best_model_state.bin: model/best_model_state.bin
+  git:
+    - lfs install
+    - lfs pull --include=best_model_state.bin
 commands:
   demo      : Demonstrate the model capabilities in one easy session.
   sentiment : Determin the sentiment of supplied sentences.
